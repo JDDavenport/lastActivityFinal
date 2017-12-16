@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="myApp"> 
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+        
+<body>  
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome. You are Logged In as
+            <%= username %>
+        </h2>
+        <a id="logoutLink" href="/logout">logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+        <p>Here are some funny memes <%= username %>
+            <p>
+	<img src="http://quotesnhumor.com/wp-content/uploads/2015/08/Top-50-Funniest-Memes-Collection-meme-pics.jpg">
+	<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/03/xx-58d12c46ad429__700.jpg">
+	<img src="https://i.pinimg.com/736x/a6/55/18/a6551844efa2f043b69e175d1bf0d83e--so-funny-funny-shit.jpg">    
+</div>
+    <hr>
+    <span id="indexMsg">
+        <%= msg %>
+    </span>
+    <hr>
+    <span id="colorText">
+    Color
+        <%= color %>
+      </span>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+      
+</html>
